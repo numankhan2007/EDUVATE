@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Event Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Web Development Workshop 2026</h1>
+    <p class="description">
+        This workshop helps students learn HTML, CSS and JavaScript basics.
+    </p>
+
+    <!-- Event Info -->
+    <div class="event-info">
+        <h2>Event Information</h2>
+        <ul>
+            <li><strong>Date:</strong> 15 March 2026</li>
+            <li><strong>Time:</strong> 10:00 AM – 4:00 PM</li>
+            <li><strong>Venue:</strong> Seminar Hall A</li>
+            <li><strong>Organizer:</strong> Department of Computer Science</li>
+        </ul>
+    </div>
+
+    <!-- Registration Form -->
+    <form id="registrationForm">
+
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <label>Name:</label>
+            <input type="text" id="name">
+
+            <label>Email:</label>
+            <input type="email" id="email">
+
+            <label>Phone:</label>
+            <input type="tel" id="phone">
+
+            <label>Date of Birth:</label>
+            <input type="date" id="dob">
+
+            <label>Gender:</label>
+            <input type="radio" name="gender" value="Male"> Male
+            <input type="radio" name="gender" value="Female"> Female
+        </fieldset>
+
+        <fieldset>
+            <legend>Event Selection</legend>
+
+            <label>Select Event:</label>
+            <select id="event">
+                <option value="">--Select--</option>
+                <option>Web Development Workshop</option>
+                <option>AI Seminar</option>
+                <option>Cyber Security Bootcamp</option>
+            </select>
+
+            <label>Mode:</label>
+            <input type="radio" name="mode" value="Online"> Online
+            <input type="radio" name="mode" value="Offline"> Offline
+        </fieldset>
+
+        <fieldset>
+            <legend>Additional Details</legend>
+
+            <label>College/Company:</label>
+            <input type="text" id="college">
+
+            <label>Upload ID Proof:</label>
+            <input type="file">
+
+            <label>Comments:</label>
+            <textarea rows="4"></textarea>
+        </fieldset>
+
+        <div class="declaration">
+            <input type="checkbox" id="confirm">
+            I confirm that the above details are correct.
+        </div>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+
+        <p id="successMessage"></p>
+
+    </form>
+
+    <!-- Participants Table -->
+    <h2>Registered Participants</h2>
+    <table id="participantsTable">
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Event</th>
+            <th>Mode</th>
+        </tr>
+    </table>
+
+    <footer>
+        <p>Contact Email: events@abccollege.edu</p>
+        <p>Help Desk: +91 94444 12345</p>
+        <p>© 2026 Department of Computer Science</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
